@@ -4,8 +4,11 @@
     --accent-color: #2196F3;
     --adress-color: rgba(255, 255, 255, 0.6);
     --primary-white-color: #ffffff;
-    --bg-color: #2F303A;
-
+    --bg-color: hsl(235, 10%, 21%);
+    --rgba-logo-black: rgba(33, 150, 243, 1);
+    --rgba-logo-white: rgba(255, 255, 255, 1);
+    --rgba-logo-blue: rgba(33, 150, 243, 1);
+    --botton-bgd: #F5F4FA;
 }
 
 body{
@@ -14,7 +17,6 @@ body{
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
-    text-decoration: none;
 }
 
 .button{
@@ -49,11 +51,14 @@ body{
     text-decoration: none;
 }
 .logo-blue{
-    color: #2196F3;
+    color: var(--rgba-logo-blue);
 }
 .logo-black{
-    color: black;
+    color: var(--rgba-logo-black);
 } 
+.logo-white{
+    color: var(--rgba-logo-white);
+}
 /* site nav */
 .site-nav .link{
     color: var(--h-text-color);
@@ -103,8 +108,11 @@ body{
     color: var(--primary-white-color);
     background: var(--accent-color);
     letter-spacing: 0.06em;
+    font-style: bold;
     font-size: 16px;
+    font-family: inherit;
     line-height: 1.87;
+
 }
 /* main  */
 
@@ -172,6 +180,7 @@ footer address a:focus{
     color: var(--adress-color);
 }
 
+/* main portfolio */
 
 /* button */
 
@@ -182,6 +191,7 @@ footer address a:focus{
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    background-color: var(--botton-bgd);
 }
 .button.filter:hover,
 .button.filter:focus{
